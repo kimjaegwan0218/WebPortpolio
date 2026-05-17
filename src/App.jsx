@@ -34,21 +34,21 @@ const profile = {
 const skills = [
   {
     label: "Backend",
-    href: "https://kjg-portpolio.vercel.app/projects/study-cafe",
+    href: "https://kjg-portfolio.vercel.app/projects/study-cafe",
     title: "Spring Boot / JPA",
     description:
       "예약, 웨이팅, 분석 요청처럼 실제 서비스의 핵심 흐름을 API와 서비스 계층으로 구현했습니다.",
   },
   {
     label: "Frontend",
-    href: "https://kjg-portpolio.vercel.app/projects/waiting-service",
+    href: "https://kjg-portfolio.vercel.app/projects/waiting-service",
     title: "React / JavaScript",
     description:
       "사용자 입력 화면, 관리자 화면, API 연동 UI를 구성하며 서비스 흐름을 화면으로 연결했습니다.",
   },
   {
     label: "AI & Data",
-    href: "https://kjg-portpolio.vercel.app/projects/car-predict",
+    href: "https://kjg-portfolio.vercel.app/projects/car-predict",
     title: "Python / CatBoost",
     description:
       "중고차 데이터 전처리, 이상치 제거, 가격 예측 모델 학습 과정을 수행했습니다.",
