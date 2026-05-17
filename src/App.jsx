@@ -34,18 +34,21 @@ const profile = {
 const skills = [
   {
     label: "Backend",
+    href: "https://kjg-portpolio.vercel.app/projects/study-cafe",
     title: "Spring Boot / JPA",
     description:
       "예약, 웨이팅, 분석 요청처럼 실제 서비스의 핵심 흐름을 API와 서비스 계층으로 구현했습니다.",
   },
   {
     label: "Frontend",
+    href: "https://kjg-portpolio.vercel.app/projects/waiting-service",
     title: "React / JavaScript",
     description:
       "사용자 입력 화면, 관리자 화면, API 연동 UI를 구성하며 서비스 흐름을 화면으로 연결했습니다.",
   },
   {
     label: "AI & Data",
+    href: "https://kjg-portpolio.vercel.app/projects/car-predict",
     title: "Python / CatBoost",
     description:
       "중고차 데이터 전처리, 이상치 제거, 가격 예측 모델 학습 과정을 수행했습니다.",
@@ -409,9 +412,14 @@ function Hero() {
             </div>
             <div className="mt-8 grid gap-3 md:grid-cols-3">
               {skills.map((skill) => (
-                <div key={skill.label} className="rounded-full bg-zinc-900 px-4 py-3 text-center text-xs font-black text-white">
+                <Link
+                  key={skill.label}
+                  to={skill.href}
+                  className="group inline-flex items-center justify-center gap-2 rounded-full bg-zinc-900 px-4 py-3 text-center text-xs font-black text-white transition hover:-translate-y-1 hover:bg-[#00a8b8] hover:text-black"
+                >
                   {skill.label}
-                </div>
+                  <ArrowRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" />
+                </Link>
               ))}
             </div>
           </div>
